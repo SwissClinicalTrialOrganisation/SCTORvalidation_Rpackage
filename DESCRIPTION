@@ -17,6 +17,7 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     cli, 
+    conflicted,
     cranlogs,
     crayon,
     dplyr,
@@ -34,7 +35,6 @@ Imports:
     tidyr
 RoxygenNote: 7.3.2
 Suggests: 
-    conflicted,
     rmarkdown,
     kableExtra,
     magrittr,
