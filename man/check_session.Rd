@@ -5,11 +5,17 @@
 \alias{print.sctovalidity}
 \title{Check a sessions loaded packages against the risk assessed packages list from GitHub}
 \usage{
-check_session(attached_only = TRUE, approved_only = TRUE)
+check_session(
+  product_risk = c("low", "medium", "high"),
+  attached_only = TRUE,
+  approved_only = TRUE
+)
 
 \method{print}{sctovalidity}(x, ...)
 }
 \arguments{
+\item{product_risk}{character vector, which product risk levels should be included in the report (default: c("low", "medium", "high"))}
+
 \item{attached_only}{logical, should all loaded packages be shown (FALSE; default), or only those that are attached (TRUE)}
 
 \item{approved_only}{logical, should only validated (approved) packages be shown (TRUE; default), or also those awaiting approval (FALSE)}

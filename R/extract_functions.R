@@ -124,6 +124,7 @@ extract_functions_from_file <- function(file){
 #' each as strings
 #'
 #' @export
+#' @importFrom conflicted conflict_scout
 #'
 #' @examples
 #' find_pkgs("mutate")
