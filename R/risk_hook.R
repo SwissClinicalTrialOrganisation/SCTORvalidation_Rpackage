@@ -13,7 +13,7 @@
 #'
 #' @examples
 #' # in e.g. setup chunk
-#' knitr::knit_hooks$set(risk = validation::risk_hook)
+#' knitr::knit_hooks$set(risk = SCTORvalidation::risk_hook)
 #' RISKENV <- new.env()
 #'
 #' # as a chunk option
