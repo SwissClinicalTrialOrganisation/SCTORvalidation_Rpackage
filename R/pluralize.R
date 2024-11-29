@@ -10,3 +10,9 @@ pluralize_is <- function(n){
   if(n > 1)  out <- "are"
   return(out)
 }
+pluralize_was <- function(n){
+  if(n == 0) out <- "were"
+  if(n == 1) out <- "was"
+  if(n > 1)  out <- "were"
+  return(out)
+}
