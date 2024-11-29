@@ -72,8 +72,7 @@ before does anything)</p></dd>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># in e.g. setup chunk</span></span></span>
-<span class="r-in"><span><span class="fu">knitr</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/knitr/man/knit_hooks.html" class="external-link">knit_hooks</a></span><span class="op">$</span><span class="fu">set</span><span class="op">(</span>risk <span class="op">=</span> <span class="fu">validation</span><span class="fu">::</span><span class="va">risk_hook</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in loadNamespace(x):</span> there is no package called ‘validation’</span>
+<span class="r-in"><span><span class="fu">knitr</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/knitr/man/knit_hooks.html" class="external-link">knit_hooks</a></span><span class="op">$</span><span class="fu">set</span><span class="op">(</span>risk <span class="op">=</span> <span class="fu">SCTORvalidation</span><span class="fu">::</span><span class="va">risk_hook</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">RISKENV</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/environment.html" class="external-link">new.env</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># as a chunk option</span></span></span>
