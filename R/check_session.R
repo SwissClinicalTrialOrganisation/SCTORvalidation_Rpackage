@@ -207,7 +207,7 @@ print.sctovalidity <- function(x, ...){
   #     paste(x$tests_diffos$package, sep = ", "), "\n")
   # }
 
-  cli_inform("See {.url https://swissclinicaltrialorganisation.github.io/pkg_validation/} for further details on package validation within the SCTO framework")
+  cli_inform("See {.url https://swissclinicaltrialorganisation.github.io/validation_platform/} for further details on package validation within the SCTO framework")
 
   return(NULL)
 
