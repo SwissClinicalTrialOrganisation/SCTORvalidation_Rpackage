@@ -1,3 +1,9 @@
+# SCTORvalidation 0.4.0
+
+* package name changed from validation to SCTORvalidation (repository name changed to SCTORvalidation_Rpackage)
+* addition of functions to extract packages and functions from scripts (`extract_functions_from_dir` and `find_pkgs`)
+* modified `check_session` (possible breaking changes to downstream processes)
+
 # validation 0.3.7
 
 Bug fix: 

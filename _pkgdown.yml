@@ -7,8 +7,10 @@ reference:
   - check_session
   - load_pkg_table
   - risk_hook
+  - find_pkgs
+  - extract_functions_from_dir
 
-- subtitle: Functions to aid in package validation
+- subtitle: Functions to aid in package risk assessment
   contents:
   - get_12month_downloads
   - get_n_deps

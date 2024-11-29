@@ -1,8 +1,8 @@
-Package: validation
+Package: SCTORvalidation
 Type: Package
 Title: Tools for assisting with package validation within the SCTO package
     validation projedct of the Statistics and Methodology platform
-Version: 0.3.7
+Version: 0.4.0
 Authors@R: 
     c(
     person(given = "Alan G.", family = "Haynes", role = "cre",
@@ -39,6 +39,6 @@ Suggests:
     magrittr,
     devtools
 VignetteBuilder: knitr
-URL: https://github.com/SwissClinicalTrialOrganisation/validation
-BugReports: https://github.com/SwissClinicalTrialOrganisation/validation/issues
+URL: https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage
+BugReports: https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage/issues
 Config/testthat/edition: 3
