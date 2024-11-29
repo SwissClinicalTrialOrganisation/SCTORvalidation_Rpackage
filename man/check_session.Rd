@@ -3,7 +3,7 @@
 \name{check_session}
 \alias{check_session}
 \alias{print.sctovalidity}
-\title{Check a sessions loaded packages against the validated packages list}
+\title{Check a sessions loaded packages against the risk assessed packages list from GitHub}
 \usage{
 check_session(attached_only = TRUE, approved_only = TRUE)
 
@@ -19,7 +19,8 @@ check_session(attached_only = TRUE, approved_only = TRUE)
 \item{...}{options passed to methods}
 }
 \description{
-Check a sessions loaded packages against the validated packages list
+This function downloads the lists of risk assessed and tested packages from
+GitHub and compares them to the packages loaded in the current R session.
 }
 \examples{
 \dontrun{
