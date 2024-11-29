@@ -16,6 +16,7 @@ License: MIT
 Encoding: UTF-8
 LazyData: true
 Imports:
+    cli, 
     cranlogs,
     crayon,
     dplyr,
@@ -31,7 +32,7 @@ Imports:
     stringr,
     testthat,
     tidyr
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Suggests: 
     rmarkdown,
     kableExtra,
