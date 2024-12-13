@@ -1,3 +1,7 @@
+# SCTORvalidation 0.4.1
+
+* update links to the (renamed) GitHub repositories
+
 # SCTORvalidation 0.4.0
 
 * package name changed from validation to SCTORvalidation (repository name changed to SCTORvalidation_Rpackage)

@@ -8,11 +8,11 @@
 #' @return the repository name (validation)
 #' @export
 #' @rdname repos
-sctoreports <- function() return("SwissClinicalTrialOrganisation/pkg_validation")
+sctoreports <- function() return("SwissClinicalTrialOrganisation/validation_platform")
 #' @rdname repos
 #' @export
 sctotests <- function() return("SwissClinicalTrialOrganisation/validation_tests")
 #' @rdname repos
 #' @export
-sctopkg <- function() return("SwissClinicalTrialOrganisation/validation")
+sctopkg <- function() return("SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage")
 
