@@ -53,25 +53,28 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="validation">validation<a class="anchor" aria-label="anchor" href="#validation"></a>
+<div class="page-header"><h1 id="sctorvalidation">SCTORvalidation<a class="anchor" aria-label="anchor" href="#sctorvalidation"></a>
 </h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The goal of validation is to provide an easy approach for the documentation and implementation of package and function tests for the SCTO R validation project. Package validations themselves can be found in the <a href="https://github.com/SwissClinicalTrialOrganisation/pkg_validation" class="external-link">pkg_validation repository</a>.</p>
+<p>The goal of SCTORvalidation is to provide an easy approach for the documentation and implementation of package and function tests for the SCTO R validation project. Package validations themselves can be found in the <a href="https://github.com/SwissClinicalTrialOrganisation/validation_platform" class="external-link">validation_platform repository</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of validation from <a href="https://github.com/SwissClinicalTrialOrganisation/validation" class="external-link">GitHub</a> with:</p>
+<p>You can install the development version of validation from <a href="https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"SwissClinicalTrialOrganisation/validation"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage"</span><span class="op">)</span></span></code></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'SCTORvalidation'</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://ctu-bern.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="testing">Testing<a class="anchor" aria-label="anchor" href="#testing"></a>
 </h2>
 <p>The package contains a <code>test</code> function which is used to run all tests for a named package.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">validation</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage" class="external-link">SCTORvalidation</a></span><span class="op">)</span></span>
 <span><span class="co">## basic example code</span></span>
 <span></span>
 <span><span class="co"># test("presize")</span></span></code></pre></div>
@@ -89,8 +92,71 @@
 <p>The <code>setup-package.R</code> file installs, updates and/or loads the package being tested and any other relevant steps (e.g. loading a dataset).</p>
 <p><code>info.txt</code> contains a plain text description of the tests.</p>
 <p>test-<code>function</code>.R contains the tests themselves. Tests should be written using <code>testthat</code> syntax, e.g.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">"'1:3' creates a sequence of 1, 2, 3"</span>, </span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>          <span class="fu">expect_equal</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">"'1:3' creates a sequence of 1, 2, 3"</span>, </span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>          <span class="fu">expect_equal</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)))</span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="checking-your-session">Checking your session<a class="anchor" aria-label="anchor" href="#checking-your-session"></a>
+</h3>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Attaching package: 'dplyr'</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     filter, lag</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://lubridate.tidyverse.org" class="external-link">lubridate</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Attaching package: 'lubridate'</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     date, intersect, setdiff, union</span></span>
+<span></span>
+<span><span class="fu">SCTORvalidation</span><span class="fu">::</span><span class="fu"><a href="reference/check_session.html">check_session</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Summary of packages in the session:  ────────────────────────────────────────</span></span>
+<span><span class="co">#&gt; Only explicitly loaded packages are included.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Package risk assessments:  ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Of 2 loaded packages,  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ✔ 1 has been risk assessed, </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ! 0 are a different version of a risk assessed package, </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ✖ 1 has not been risk assessed to date. </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; The following packages require risk assessment:</span></span>
+<span><span class="co">#&gt; • lubridate</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Packages with tests:  ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── Of 2 loaded packages,  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ✔ 0 have tests on this R version and OS. </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── There are 0 high risk package(s) ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ── There are 0 medium risk package(s) ──</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; See &lt;https://swissclinicaltrialorganisation.github.io/validation_platform/&gt; for</span></span>
+<span><span class="co">#&gt; further details on package validation within the SCTO framework</span></span></code></pre></div>
 </div>
 </div>
 </div>
