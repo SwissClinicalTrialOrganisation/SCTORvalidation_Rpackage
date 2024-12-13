@@ -1,26 +1,32 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# validation
+# SCTORvalidation
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of validation is to provide an easy approach for the
+The goal of SCTORvalidation is to provide an easy approach for the
 documentation and implementation of package and function tests for the
 SCTO R validation project. Package validations themselves can be found
-in the [pkg_validation
-repository](https://github.com/SwissClinicalTrialOrganisation/pkg_validation).
+in the [validation_platform
+repository](https://github.com/SwissClinicalTrialOrganisation/validation_platform).
 
 ## Installation
 
 You can install the development version of validation from
-[GitHub](https://github.com/SwissClinicalTrialOrganisation/validation)
+[GitHub](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
 with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("SwissClinicalTrialOrganisation/validation")
+devtools::install_github("SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage")
+```
+
+or
+
+``` r
+install.packages('SCTORvalidation', repos = c('https://ctu-bern.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
 ## Testing
@@ -29,7 +35,7 @@ The package contains a `test` function which is used to run all tests
 for a named package.
 
 ``` r
-library(validation)
+library(SCTORvalidation)
 ## basic example code
 
 # test("presize")
@@ -61,3 +67,68 @@ using `testthat` syntax, e.g.
 
     test_that("'1:3' creates a sequence of 1, 2, 3", 
               expect_equal(1:3, c(1,2,3)))
+
+### Checking your session
+
+``` r
+library(dplyr)
+#> Warning: package 'dplyr' was built under R version 4.3.3
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+library(lubridate)
+#> Warning: package 'lubridate' was built under R version 4.3.2
+#> 
+#> Attaching package: 'lubridate'
+#> The following objects are masked from 'package:base':
+#> 
+#>     date, intersect, setdiff, union
+
+SCTORvalidation::check_session()
+#> 
+#> ── Summary of packages in the session:  ────────────────────────────────────────
+#> Only explicitly loaded packages are included.
+#> 
+#> 
+#> ── Package risk assessments:  ──
+#> 
+#> 
+#> 
+#> ── Of 2 loaded packages,  
+#> 
+#> ✔ 1 has been risk assessed, 
+#> 
+#> ! 0 are a different version of a risk assessed package, 
+#> 
+#> ✖ 1 has not been risk assessed to date. 
+#> 
+#> The following packages require risk assessment:
+#> • lubridate
+#> 
+#> 
+#> ── Packages with tests:  ──
+#> 
+#> 
+#> 
+#> ── Of 2 loaded packages,  
+#> 
+#> ✔ 0 have tests on this R version and OS. 
+#> 
+#> 
+#> 
+#> ── There are 0 high risk package(s) ──
+#> 
+#> 
+#> 
+#> ── There are 0 medium risk package(s) ──
+#> 
+#> 
+#> 
+#> See <https://swissclinicaltrialorganisation.github.io/pkg_validation/> for
+#> further details on package validation within the SCTO framework
+```
