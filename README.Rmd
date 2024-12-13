@@ -16,6 +16,9 @@ knitr::opts_chunk$set(
 # SCTORvalidation
 
 <!-- badges: start -->
+
+`r badger::badge_custom("dev version", as.character(packageVersion("SCTORvalidation")), "blue", "https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage")`
+
 <!-- badges: end -->
 
 The goal of SCTORvalidation is to provide an easy approach for the documentation and implementation of package and function tests for the SCTO R validation project. Package validations themselves can be found in the [validation_platform repository](https://github.com/SwissClinicalTrialOrganisation/validation_platform).
