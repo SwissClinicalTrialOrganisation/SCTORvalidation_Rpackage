@@ -72,7 +72,6 @@ using `testthat` syntax, e.g.
 
 ``` r
 library(dplyr)
-#> Warning: package 'dplyr' was built under R version 4.3.3
 #> 
 #> Attaching package: 'dplyr'
 #> The following objects are masked from 'package:stats':
@@ -82,7 +81,6 @@ library(dplyr)
 #> 
 #>     intersect, setdiff, setequal, union
 library(lubridate)
-#> Warning: package 'lubridate' was built under R version 4.3.2
 #> 
 #> Attaching package: 'lubridate'
 #> The following objects are masked from 'package:base':
@@ -129,6 +127,6 @@ SCTORvalidation::check_session()
 #> 
 #> 
 #> 
-#> See <https://swissclinicaltrialorganisation.github.io/pkg_validation/> for
+#> See <https://swissclinicaltrialorganisation.github.io/validation_platform/> for
 #> further details on package validation within the SCTO framework
 ```
