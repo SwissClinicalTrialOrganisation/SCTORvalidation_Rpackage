@@ -27,6 +27,7 @@ update_pkg_table <- function(...){
            ) |>
     bind_rows(new) |>
     group_by(package, desc(version), issue_num) |>
-    slice_tail(n = 1)
+    slice_tail(n = 1) |>
+    select(-`desc(version)`)
 
 }

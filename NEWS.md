@@ -1,3 +1,7 @@
+# SCTORvalidation 0.4.2
+
+remove desc(version) column from `update_pkg_table`
+
 # SCTORvalidation 0.4.1
 
 * update links to the (renamed) GitHub repositories
