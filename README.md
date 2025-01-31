@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![](https://img.shields.io/badge/dev%20version-0.4.1-blue.svg)](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
+[![](https://img.shields.io/badge/dev%20version-0.4.2-blue.svg)](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
 
 <!-- badges: end -->
 
