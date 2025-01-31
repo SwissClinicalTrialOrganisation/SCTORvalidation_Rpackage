@@ -5,7 +5,7 @@
 #' @param ... options passed to gen_pkg_table e.g. a list of issues from get_pkgs
 #'
 #' @export
-#' @importFrom dplyr bind_rows group_by slice_tail ends_with across desc
+#' @importFrom dplyr bind_rows group_by slice_tail ends_with across desc ungroup
 #'
 #' @examples
 #' # update_pkg_table()
