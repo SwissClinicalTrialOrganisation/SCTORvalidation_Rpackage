@@ -1,3 +1,7 @@
+# SCTORvalidation 0.4.3
+
+`extract_elements_test` uses laxy regex to extract OS. It previously used greedy regex which caused issues when a package also loaded the Matrix package
+
 # SCTORvalidation 0.4.2
 
 remove desc(version) column from `update_pkg_table`

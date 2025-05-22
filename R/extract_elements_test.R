@@ -51,7 +51,7 @@ extract_elements_test <- function(issue){
     str_extract("\\d\\.\\d\\.\\d")
   out$os <- out$session_info |>
     str_replace_all("\\n", "   ") |>
-    str_extract("Running under: .* Matrix") |>
+    str_extract("Running under: .*? Matrix") |>
     str_remove("Running under: ") |>
     str_remove("   Matrix")
   out$approved <- is_approved(list(issue))
