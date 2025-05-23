@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![](https://img.shields.io/badge/dev%20version-0.4.2-blue.svg)](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
+[![](https://img.shields.io/badge/dev%20version-0.4.3-blue.svg)](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
 
 <!-- badges: end -->
 
@@ -102,14 +102,12 @@ SCTORvalidation::check_session()
 #> 
 #> ── Of 2 loaded packages,  
 #> 
-#> ✔ 1 has been risk assessed, 
+#> ✔ 2 have been risk assessed, 
 #> 
 #> ! 0 are a different version of a risk assessed package, 
 #> 
-#> ✖ 1 has not been risk assessed to date. 
+#> ✖ 0 have not been risk assessed to date. 
 #> 
-#> The following packages require risk assessment:
-#> • lubridate
 #> 
 #> 
 #> ── Packages with tests:  ──
