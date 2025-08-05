@@ -1,3 +1,9 @@
+# SCTORvalidation 0.4.4
+
+Bug fix:
+
+* get_n_deps throwed an error when a package had 0 dependencies in "Depends" or "Imports"
+
 # SCTORvalidation 0.4.3
 
 `extract_elements_test` uses laxy regex to extract OS. It previously used greedy regex which caused issues when a package also loaded the Matrix package
