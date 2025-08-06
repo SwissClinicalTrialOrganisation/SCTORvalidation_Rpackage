@@ -2,7 +2,7 @@
 
 Bug fix:
 
-* get_n_deps throwed an error when a package had 0 dependencies in "Depends" or "Imports"
+* get_n_deps threw an error when a package had 0 dependencies in "Depends" or "Imports"
 
 # SCTORvalidation 0.4.3
 
