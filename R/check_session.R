@@ -16,7 +16,9 @@
 check_session <- function(product_risk = c("low", "medium", "high"),
                           attached_only = TRUE, approved_only = TRUE, recommended = FALSE, ignore = NA){
   attached <- package <- loadedversion <- NULL
+  
 
+  
   # session info
   session <- package_info()
   session_info <- sessionInfo()
@@ -33,7 +35,7 @@ rec_list <- c("KernSmooth", "MASS", "Matrix", "boot", "class", "cluster", "codet
 if(!recommended)
     loaded <- loaded |> filter(!packages %in% rec_list)
 
-if(!is.na(ignore)){
+if(!is.na(ignore))
   loaded <- loaded |> filter(!packages %in% ignore)
 
   
