@@ -1,3 +1,7 @@
+# SCTORvalidation 0.4.5
+
+Two new parameters were added to the check_session() function to allow to ignore the check of specified packages. 
+
 # SCTORvalidation 0.4.4
 
 Bug fix:
@@ -6,7 +10,7 @@ Bug fix:
 
 # SCTORvalidation 0.4.3
 
-`extract_elements_test` uses laxy regex to extract OS. It previously used greedy regex which caused issues when a package also loaded the Matrix package
+`extract_elements_test` uses lazy regex to extract OS. It previously used greedy regex which caused issues when a package also loaded the Matrix package
 
 # SCTORvalidation 0.4.2
 

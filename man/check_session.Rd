@@ -8,7 +8,9 @@
 check_session(
   product_risk = c("low", "medium", "high"),
   attached_only = TRUE,
-  approved_only = TRUE
+  approved_only = TRUE,
+  recommended = FALSE,
+  ignore = NA
 )
 
 \method{print}{sctovalidity}(x, ...)
@@ -19,6 +21,10 @@ check_session(
 \item{attached_only}{logical, should all loaded packages be shown (FALSE; default), or only those that are attached (TRUE)}
 
 \item{approved_only}{logical, should only validated (approved) packages be shown (TRUE; default), or also those awaiting approval (FALSE)}
+
+\item{recommended}{logical, should recommended packages be checked (FALSE; default)}
+
+\item{ignore}{character vector, packages to ignore during checking (NA; default)}
 
 \item{x}{output from \code{check_session}}
 

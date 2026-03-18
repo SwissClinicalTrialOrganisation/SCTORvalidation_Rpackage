@@ -5,6 +5,8 @@
 #' @param product_risk character vector, which product risk levels should be included in the report (default: c("low", "medium", "high"))
 #' @param attached_only logical, should all loaded packages be shown (FALSE; default), or only those that are attached (TRUE)
 #' @param approved_only logical, should only validated (approved) packages be shown (TRUE; default), or also those awaiting approval (FALSE)
+#' @param recommended logical, should recommended packages be checked (FALSE; default)
+#' @param ignore character vector, packages to ignore during checking (NA; default)
 #' @export
 #' @importFrom sessioninfo package_info
 #' @importFrom dplyr filter left_join join_by first mutate summarize if_else across select
@@ -14,8 +16,10 @@
 #' check_session()
 #' }
 check_session <- function(product_risk = c("low", "medium", "high"),
-                          attached_only = TRUE, approved_only = TRUE){
+                          attached_only = TRUE, approved_only = TRUE, recommended = FALSE, ignore = NA){
   attached <- package <- loadedversion <- NULL
+
+
 
   # session info
   session <- package_info()
@@ -26,6 +30,16 @@ check_session <- function(product_risk = c("low", "medium", "high"),
   loaded <- session |>
     # filter(attached) |>
     as.data.frame()
+
+
+rec_list <- c("KernSmooth", "MASS", "Matrix", "boot", "class", "cluster", "codetools", "foreign",
+              "lattice", "mgcv", "nlme", "nnet", "rpart", "spatial", "survival")
+if(!recommended)
+    loaded <- loaded |> filter(!packages %in% rec_list)
+
+if(!is.na(ignore))
+  loaded <- loaded |> filter(!packages %in% ignore)
+
 
   if(attached_only)
     loaded <- loaded |> filter(attached)
