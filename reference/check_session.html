@@ -9,7 +9,7 @@ GitHub and compares them to the packages loaded in the current R session."></hea
 
     <a class="navbar-brand me-2" href="../index.html">SCTORvalidation</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,9 @@ GitHub and compares them to the packages loaded in the current R session.</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">check_session</span><span class="op">(</span></span>
 <span>  product_risk <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"low"</span>, <span class="st">"medium"</span>, <span class="st">"high"</span><span class="op">)</span>,</span>
 <span>  attached_only <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span>  approved_only <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span>  approved_only <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  recommended <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  ignore <span class="op">=</span> <span class="cn">NA</span></span>
 <span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S3 method for class 'sctovalidity'</span></span>
@@ -70,6 +72,14 @@ GitHub and compares them to the packages loaded in the current R session.</p>
 
 <dt id="arg-approved-only">approved_only<a class="anchor" aria-label="anchor" href="#arg-approved-only"></a></dt>
 <dd><p>logical, should only validated (approved) packages be shown (TRUE; default), or also those awaiting approval (FALSE)</p></dd>
+
+
+<dt id="arg-recommended">recommended<a class="anchor" aria-label="anchor" href="#arg-recommended"></a></dt>
+<dd><p>logical, should recommended packages be checked (FALSE; default)</p></dd>
+
+
+<dt id="arg-ignore">ignore<a class="anchor" aria-label="anchor" href="#arg-ignore"></a></dt>
+<dd><p>character vector, packages to ignore during checking (NA; default)</p></dd>
 
 
 <dt id="arg-x">x<a class="anchor" aria-label="anchor" href="#arg-x"></a></dt>
@@ -97,7 +107,7 @@ GitHub and compares them to the packages loaded in the current R session.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>

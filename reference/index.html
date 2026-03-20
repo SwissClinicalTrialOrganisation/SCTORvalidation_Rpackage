@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">SCTORvalidation</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,8 +40,7 @@
 
 
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -52,25 +51,29 @@
 
         </dt>
         <dd>Check a sessions loaded packages against the risk assessed packages list from GitHub</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="load_pkg_table.html">load_pkg_table()</a></code> <code><a href="load_pkg_table.html">load_tests_table()</a></code>
 
         </dt>
         <dd>Load the flat file of validated packages from github</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="risk_hook.html">risk_hook()</a></code>
 
         </dt>
         <dd>Hook for collecting user-defined chunk risk level in markdown documents</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="find_pkgs.html">find_pkgs()</a></code>
 
         </dt>
         <dd>Determine which package a function is from</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="extract_functions.html">extract_functions_from_dir()</a></code> <code><a href="extract_functions.html">extract_functions_from_file()</a></code>
 
@@ -81,8 +84,7 @@
       <h3 id="functions-to-aid-in-package-risk-assessment">Functions to aid in package risk assessment<a class="anchor" aria-label="anchor" href="#functions-to-aid-in-package-risk-assessment"></a></h3>
 
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -93,19 +95,22 @@
 
         </dt>
         <dd>Get number of downloads in the last 12 months</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_n_deps.html">get_n_deps()</a></code>
 
         </dt>
         <dd>Get the number of dependencies for a package</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_release_date.html">get_release_date()</a></code>
 
         </dt>
         <dd>Get the release date of a CRAN package</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_pkg_source.html">get_pkg_source()</a></code>
 
@@ -116,8 +121,7 @@
       <h3 id="functions-to-aid-in-testing-packages">Functions to aid in testing packages<a class="anchor" aria-label="anchor" href="#functions-to-aid-in-testing-packages"></a></h3>
 
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -128,19 +132,22 @@
 
         </dt>
         <dd>Run all tests for a given package</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="test_skeleton.html">test_skeleton()</a></code>
 
         </dt>
         <dd>Add a new package skeleton</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_tests.html">get_tests()</a></code>
 
         </dt>
         <dd>download test files from the validation_tests repo</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_test_data.html">get_test_data()</a></code>
 
@@ -151,14 +158,12 @@
 
       <div class="section-desc"><p>Many functions are only intended to be used in GitHub actions rather than for normal users.</p></div>
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
       <h3 id="links-to-github-repositories">Links to GitHub repositories<a class="anchor" aria-label="anchor" href="#links-to-github-repositories"></a></h3>
       <div class="section-desc"><p>These are accessory functions containing the names of the repositories</p></div>
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -174,8 +179,7 @@
       <h3 id="functions-that-interface-directly-with-github">Functions that interface directly with GitHub<a class="anchor" aria-label="anchor" href="#functions-that-interface-directly-with-github"></a></h3>
 
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -186,7 +190,8 @@
 
         </dt>
         <dd>Convert issues from to tables</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_issue.html">add_label()</a></code> <code><a href="get_issue.html">close_issue()</a></code> <code><a href="get_issue.html">get_comments()</a></code> <code><a href="get_issue.html">get_issue()</a></code> <code><a href="get_issue.html">get_issues()</a></code> <code><a href="get_issue.html">get_test_reports()</a></code> <code><a href="get_issue.html">post_comment()</a></code> <code><a href="get_issue.html">post_issue()</a></code> <code><a href="get_issue.html">remove_label()</a></code> <code><a href="get_issue.html">update_issue()</a></code>
 
@@ -197,8 +202,7 @@
       <h3 id="functions-to-work-with-issue-data">Functions to work with issue data<a class="anchor" aria-label="anchor" href="#functions-to-work-with-issue-data"></a></h3>
 
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -209,31 +213,36 @@
 
         </dt>
         <dd>Convert the text risk metric answers to numeric values and calculate a score</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="get_valid_pkgs.html">get_valid_pkgs()</a></code>
 
         </dt>
         <dd>Get the list of validated packages from GitHub</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="is_.html">is_()</a></code> <code><a href="is_.html">is_package()</a></code> <code><a href="is_.html">is_test()</a></code> <code><a href="is_.html">is_approved()</a></code> <code><a href="is_.html">is_triage()</a></code> <code><a href="is_.html">get_labels()</a></code>
 
         </dt>
         <dd>Check whether an issue has a particular label</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="parse_evidence_tab.html">parse_evidence_tab()</a></code>
 
         </dt>
         <dd>Convert test evidence table back to a data frame</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="update_pkg_table.html">update_pkg_table()</a></code> <code><a href="update_pkg_table.html">update_tests_table()</a></code>
 
         </dt>
         <dd>Append new issue data to existing tables</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="validate_pkg_issue.html">validate_pkg_issue()</a></code> <code><a href="validate_pkg_issue.html">validate_test_issue()</a></code>
 
@@ -244,8 +253,7 @@
       <h3 id="functions-related-to-running-tests">Functions related to running tests<a class="anchor" aria-label="anchor" href="#functions-related-to-running-tests"></a></h3>
 
 
-
-    </div><div class="section level2">
+      <dl></dl></div><div class="section level2">
 
 
 
@@ -256,7 +264,8 @@
 
         </dt>
         <dd>Get the list of packages that have tests in a repository</dd>
-      </dl><dl><dt>
+
+        <dt>
 
           <code><a href="test_to_text.html">test_to_text()</a></code>
 
@@ -272,7 +281,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer></div>
