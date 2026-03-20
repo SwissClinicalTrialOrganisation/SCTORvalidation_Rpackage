@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![](https://img.shields.io/badge/dev%20version-0.4.4-blue.svg)](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
+[![](https://img.shields.io/badge/dev%20version-0.4.5-blue.svg)](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage)
 
 <!-- badges: end -->
 
@@ -102,9 +102,9 @@ SCTORvalidation::check_session()
 #> 
 #> ── Of 2 loaded packages,  
 #> 
-#> ✔ 2 have been risk assessed, 
+#> ✔ 1 has been risk assessed, 
 #> 
-#> ! 0 are a different version of a risk assessed package, 
+#> ! 1 is a different version of a risk assessed package, 
 #> 
 #> ✖ 0 have not been risk assessed to date. 
 #> 
