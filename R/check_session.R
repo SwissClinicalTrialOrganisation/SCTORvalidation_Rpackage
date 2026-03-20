@@ -35,10 +35,10 @@ check_session <- function(product_risk = c("low", "medium", "high"),
 rec_list <- c("KernSmooth", "MASS", "Matrix", "boot", "class", "cluster", "codetools", "foreign",
               "lattice", "mgcv", "nlme", "nnet", "rpart", "spatial", "survival")
 if(!recommended)
-    loaded <- loaded |> filter(!packages %in% rec_list)
+    loaded <- loaded |> filter(!package %in% rec_list)
 
 if(!is.na(ignore))
-  loaded <- loaded |> filter(!packages %in% ignore)
+  loaded <- loaded |> filter(!package %in% ignore)
 
 
   if(attached_only)
