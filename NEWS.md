@@ -1,3 +1,9 @@
+# SCTORvalidation (development version)
+
+Help pages of `convert_downloads_to_score()` and `convert_deps_to_score()`
+state the formulas as implemented (validation_platform discussion #220).
+Documentation only.
+
 # SCTORvalidation 0.4.5
 
 Two new parameters were added to the check_session() function to allow to ignore the check of specified packages. 
