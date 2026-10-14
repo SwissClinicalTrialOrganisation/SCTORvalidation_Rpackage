@@ -22,7 +22,7 @@ or
 
 ``` r
 
-install.packages('SCTORvalidation', repos = c('https://ctu-bern.r-universe.dev', 'https://cloud.r-project.org'))
+install.packages('SCTORvalidation', repos = c('https://dcr-unibe-ch.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
 ## Testing

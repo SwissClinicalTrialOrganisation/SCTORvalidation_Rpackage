@@ -24,9 +24,9 @@ dataframe including package, version, etc.
 ``` r
 # only approved packages
 get_valid_pkgs()
-#> ⠙ 100 items, page 1 | 2ms
-#> ⠹ 200 items, page 2 | 973ms
-#> ⠸ 271 items, page 3 | 1.7s
+#> ⠙ 100 items, page 1 | 3ms
+#> ⠹ 200 items, page 2 | 1.2s
+#> ⠸ 271 items, page 3 | 1.9s
 #> Warning: NAs introduced by coercion
 #> Warning: NAs introduced by coercion
 #> Warning: NAs introduced by coercion
@@ -84033,8 +84033,8 @@ get_valid_pkgs()
 # all packages, regardless of status
 get_valid_pkgs(FALSE)
 #> ⠙ 100 items, page 1 | 1ms
-#> ⠹ 200 items, page 2 | 15ms
-#> ⠸ 271 items, page 3 | 25ms
+#> ⠹ 200 items, page 2 | 29ms
+#> ⠸ 271 items, page 3 | 49ms
 #> Warning: NAs introduced by coercion
 #> Warning: NAs introduced by coercion
 #> Warning: NAs introduced by coercion
