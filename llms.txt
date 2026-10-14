@@ -13,6 +13,7 @@ You can install the development version of validation from
 with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage")
 ```
@@ -20,6 +21,7 @@ devtools::install_github("SwissClinicalTrialOrganisation/SCTORvalidation_Rpackag
 or
 
 ``` r
+
 install.packages('SCTORvalidation', repos = c('https://ctu-bern.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
@@ -29,6 +31,7 @@ The package contains a `test` function which is used to run all tests
 for a named package.
 
 ``` r
+
 library(SCTORvalidation)
 ## basic example code
 
@@ -65,6 +68,7 @@ test_that("'1:3' creates a sequence of 1, 2, 3",
 ### Checking your session
 
 ``` r
+
 library(dplyr)
 #> 
 #> Attaching package: 'dplyr'
@@ -93,9 +97,9 @@ SCTORvalidation::check_session()
 #> 
 #> ── Of 2 loaded packages,  
 #> 
-#> ✔ 1 has been risk assessed, 
+#> ✔ 2 have been risk assessed, 
 #> 
-#> ! 1 is a different version of a risk assessed package, 
+#> ! 0 are a different version of a risk assessed package, 
 #> 
 #> ✖ 0 have not been risk assessed to date. 
 #> 

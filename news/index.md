@@ -1,5 +1,16 @@
 # Changelog
 
+## SCTORvalidation 0.4.6
+
+Package tests added (prepared by Jakob Heimer).
+
+Bug fix:
+
+- regex to extract info from test issues was too dependent on a number
+  of line breaks (“\n\n”). This has been relaxed to 2+ (“\n{2,}”). This
+  was identified in
+  <https://github.com/SwissClinicalTrialOrganisation/validation_platform/issues/326>.
+
 ## SCTORvalidation 0.4.5
 
 Two new parameters were added to the check_session() function to allow

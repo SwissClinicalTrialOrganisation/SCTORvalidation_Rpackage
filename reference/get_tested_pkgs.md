@@ -22,5 +22,5 @@ character vector of package (directory) names
 
 ``` r
 get_tested_pkgs()
-#> [1] "accrualPlot" "stats"       "survRM2"    
+#> [1] "Epi"         "accrualPlot" "blockrand"   "stats"       "survRM2"    
 ```

@@ -21,6 +21,7 @@ of the package to be tested and add the names of the function(s) you
 want to test in the `funs` argument.
 
 ``` r
+
 test_skeleton("pkg", funs = c("fun", "fun2", "etc"))
 ```
 
@@ -85,6 +86,7 @@ name.
 E.g.
 
 ``` r
+
 test_that("some meaningful message about the tests", {
   expect_equal(1 + 1, 2)
   expect_true(is.numeric(1))
@@ -99,6 +101,7 @@ should be shown for the tests (e.g. perhaps the coefficients and
 standard errors from a model):
 
 ``` r
+
 obj <- some_function(params)
 test_that("test 1 on obj", {
   expect_equal(obj$value_to_test, expected_value)
@@ -112,6 +115,7 @@ If objects are only useful to the test, they can be created within the
 `test_that` function.
 
 ``` r
+
 test_that("tests on obj", {
   obj <- some_function(params)
   expect_equal(obj$value_to_test, expected_value)
@@ -134,6 +138,7 @@ added to the testing file, for as many test cases as considered
 appropriate:
 
 ``` r
+
 test_that("function f works", {
   expect_equal(f(x), y)
 })
@@ -152,6 +157,7 @@ error, a warning or a message, the following corresponding code can be
 adapted, for as many test cases as considered appropriate:
 
 ``` r
+
 test_that("function f returns an error", {
   expect_error(f(x))
 })
@@ -170,6 +176,7 @@ the conditions. Use the `regexp` argument to check for a particular
 error, warning or message.
 
 ``` r
+
 test_that("function f returns an error", {
   expect_error(f(x), regexp = "some error message")
 })
@@ -180,6 +187,7 @@ error, a warning or a message, the following corresponding code can be
 adapted, for as many test cases as considered appropriate:
 
 ``` r
+
 test_that("function f runs without error", {
   expect_no_error(f(x))
 })
@@ -199,6 +207,7 @@ To test whether, under certain conditions, the function returns TRUE or
 FALSE, adapt the following code as appropriate:
 
 ``` r
+
 test_that("function f returns TRUE", {
   expect_true(f(x))
 })
@@ -218,6 +227,7 @@ the following code can be adapted, for as many test cases as considered
 appropriate:
 
 ``` r
+
 test_that("function f returns NULL", {
   expect_null(f(x))
 })
@@ -230,6 +240,7 @@ following code can be adapted, for as many test cases as considered
 appropriate:
 
 ``` r
+
 test_that("function f returns object of type XXX", {
   expect_type(f(x), type)
 })
@@ -246,6 +257,7 @@ following code can be adapted, for as many cases as considered
 appropriate:
 
 ``` r
+
 test_that("function f returns object of class s3", {
   expect_s3_class(f(x), class)
 })
@@ -333,6 +345,7 @@ To begin with, we construct the testing files, specifically the
 only pass that to the second argument:
 
 ``` r
+
 test_skeleton("stats", "lm")
 ```
 
@@ -614,6 +627,7 @@ Assuming the tests are in a folder called `stats`, which is within out
 current working directory, we can run the tests with:
 
 ``` r
+
 validation::test("stats", download = FALSE)
 ```
 

@@ -40,6 +40,7 @@ directory containing the test files. Therefore, the dataset can be
 downloaded and saved and used without referring to any other directory.
 The setup-pkg.R file might then contain:
 
+
     ...
     library(testthat)
 

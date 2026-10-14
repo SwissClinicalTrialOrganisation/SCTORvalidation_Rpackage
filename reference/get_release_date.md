@@ -28,6 +28,7 @@ search elsewhere for the information.
 ## Examples
 
 ``` r
+
 get_release_date("dplyr")
-#> [1] "2026-02-03"
+#> [1] "2026-04-03"
 ```
