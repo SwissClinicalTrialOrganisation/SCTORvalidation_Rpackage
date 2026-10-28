@@ -2,6 +2,10 @@
 
 Package tests added (prepared by Jakob Heimer).
 
+Help pages of `convert_downloads_to_score()` and `convert_deps_to_score()`
+state the formulas as implemented (validation_platform discussion #220).
+Documentation only.
+
 Bug fix:
 
 * regex to extract info from test issues was too dependent on a number of line breaks ("\\n\\n"). This has been relaxed to 2+ ("\\n{2,}"). This was identified in https://github.com/SwissClinicalTrialOrganisation/validation_platform/issues/326.
