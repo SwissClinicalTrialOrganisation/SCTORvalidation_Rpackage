@@ -10,7 +10,7 @@ extract_elements_test <- function(issue){
   # most information in the body of the issue
   body <- issue$body
   body <- str_replace_all(body, "\\r\\n", "CARRIAGERETURN")
-  body <- str_replace_all(body, "\\n\\n", "CARRIAGERETURN")
+  body <- str_replace_all(body, "\\n{2,}", "CARRIAGERETURN")
   body <- str_split(body, "CARRIAGERETURN") |> unlist()
   body <- body[body != ""]
   elements <- data.frame(body = body) |>
