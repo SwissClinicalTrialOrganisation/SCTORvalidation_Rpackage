@@ -30,7 +30,7 @@ integer number of downloads
 
 ``` r
 get_12month_downloads("ggplot2")
-#> [1] 27741636
+#> [1] 27749984
 get_12month_downloads("secuTrialR")
-#> [1] 6982
+#> [1] 6882
 ```

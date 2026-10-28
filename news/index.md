@@ -4,6 +4,13 @@
 
 Package tests added (prepared by Jakob Heimer).
 
+Help pages of
+[`convert_downloads_to_score()`](../reference/convert_downloads_to_score.md)
+and [`convert_deps_to_score()`](../reference/convert_deps_to_score.md)
+state the formulas as implemented (validation_platform discussion
+[\#220](https://github.com/SwissClinicalTrialOrganisation/SCTORvalidation_Rpackage/issues/220)).
+Documentation only.
+
 Bug fix:
 
 - regex to extract info from test issues was too dependent on a number
