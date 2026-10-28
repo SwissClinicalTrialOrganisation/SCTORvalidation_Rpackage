@@ -1,4 +1,3 @@
-# SCTORvalidation (development version)
 
 Help pages of `convert_downloads_to_score()` and `convert_deps_to_score()`
 state the formulas as implemented (validation_platform discussion #220).
